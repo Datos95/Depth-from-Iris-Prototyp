@@ -1,0 +1,10 @@
+<resources>
+    <string name="no_camera_access" translatable="false">Please grant camera permissions.</string>
+    <string name="X" translatable="false">X: {%1$s}</string>
+    <string name="Y" translatable="false">Y: {%1$s}</string>
+    <string name="Z" translatable="false">Z: {%1$s}</string>
+    <string name="R" translatable="false">R: {%1$s}</string>
+    <string name="L" translatable="false">L: {%1$s}</string>
+    <string name="channel_name" translatable="false">Background</string>
+    <string name="channel_description" translatable="false">Service is running background</string>
+</resources>

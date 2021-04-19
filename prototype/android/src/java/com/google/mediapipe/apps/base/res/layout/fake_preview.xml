@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/fake_preview_display_layout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/L" />
+
+            <TextView
+                android:id="@+id/right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/R" />
+
+            <TextView
+                android:id="@+id/rotationX"
+                android:layout_width="211dp"
+                android:layout_height="wrap_content"
+                android:text="@string/X" />
+
+            <TextView
+                android:id="@+id/rotationY"
+                android:layout_width="211dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Y" />
+
+            <TextView
+                android:id="@+id/rotationZ"
+                android:layout_width="211dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Z" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

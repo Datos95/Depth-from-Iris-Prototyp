@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rotationX"
+                android:layout_width="211dp"
+                android:layout_height="wrap_content"
+                android:text="@string/X" />
+
+            <TextView
+                android:id="@+id/rotationY"
+                android:layout_width="211dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Y" />
+
+            <TextView
+                android:id="@+id/rotationZ"
+                android:layout_width="211dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Z" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/left"
+                android:layout_width="211dp"
+                android:layout_height="wrap_content"
+                android:text="@string/L" />
+
+            <TextView
+                android:id="@+id/right"
+                android:layout_width="211dp"
+                android:layout_height="wrap_content"
+                android:text="@string/R" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/preview_display_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <TextView
+            android:id="@+id/no_camera_access_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/no_camera_access" />
+    </FrameLayout>
+</LinearLayout>
